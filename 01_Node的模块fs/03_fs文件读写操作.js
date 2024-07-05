@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: liusuolong001
+ * @Date: 2024-07-03 22:16:36
+ * @LastEditors:
+ * @LastEditTime: 2024-07-05 21:50:27
+ */
 /* commonjs 常用 */
 const fs = require("fs");
 
@@ -20,3 +27,5 @@ fs.readFile("./files/txt/demo.txt", { encoding: "utf-8" }, (err, data) => {
   }
   console.log("data@@", data);
 });
+
+console.log("yinhao");
