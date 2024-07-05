@@ -3,7 +3,7 @@
  * @Author: liusuolong001
  * @Date: 2024-07-05 20:55:10
  * @LastEditors: liusuolong001
- * @LastEditTime: 2024-07-06 02:07:19
+ * @LastEditTime: 2024-07-06 03:14:13
  */
 
 const fs = require("fs");
@@ -17,7 +17,7 @@ const fs = require("fs");
   flags 修改文件而不是替换 修改为r+ 默认w 
 */
 const writeStream = fs.createWriteStream("./files/write.txt", {
-  // start: 3,
+  start: 3,
   flags: "a+",
 });
 
