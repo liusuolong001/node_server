@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: liusuolong001
+ * @Date: 2024-07-05 18:09:22
+ * @LastEditors: liusuolong001
+ * @LastEditTime: 2024-07-06 06:41:25
+ */
 const fs = require("fs");
 
 /* 
@@ -25,7 +32,7 @@ readStream.on("open", (fd) => {
 });
 
 /* 
-  end 文件流已经读取到end位置
+  end 当所有数据接收完毕时触发，用于处理所有数据接收完毕后的操作
 */
 readStream.on("end", () => {
   console.log("文件流已经读取到end位置");
