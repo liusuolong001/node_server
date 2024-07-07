@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: liusuolong001
+ * @Date: 2024-07-05 17:33:46
+ * @LastEditors: liusuolong001
+ * @LastEditTime: 2024-07-06 21:44:08
+ */
 const fs = require("fs");
 
 /* 
@@ -14,6 +21,7 @@ const readStream = fs.createReadStream("./files/demo.txt", {
 });
 /* 文件流是EventEmitter的实例 EventEmitter中所有方法readStream都可以使用 从第四位开始读取读到第七位*/
 readStream.on("data", (data) => {
+  console.log("data@@@", data);
   console.log("readSteam", data.toString());
 
   readStream.pause(); //对文件读取进行暂停

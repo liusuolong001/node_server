@@ -2,8 +2,8 @@
  * @Description:
  * @Author: liusuolong001
  * @Date: 2024-07-03 22:16:36
- * @LastEditors:
- * @LastEditTime: 2024-07-05 21:50:27
+ * @LastEditors: liusuolong001
+ * @LastEditTime: 2024-07-06 19:23:46
  */
 /* commonjs 常用 */
 const fs = require("fs");
@@ -15,6 +15,7 @@ const msg = "learning node服务器的";
 fs.writeFile("./files/txt/demo.txt", msg, { flag: "a" }, (error) => {
   if (error) {
     console.log("写入文件失败");
+    return;
   }
   console.log("写入文件成功");
 });
