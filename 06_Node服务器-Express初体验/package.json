@@ -1,0 +1,9 @@
+{
+  "name": "06_Node服务器-Express初体验",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
