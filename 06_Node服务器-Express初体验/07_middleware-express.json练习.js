@@ -3,7 +3,7 @@
  * @Author: liusuolong001
  * @Date: 2024-07-07 17:48:18
  * @LastEditors: liusuolong001
- * @LastEditTime: 2024-07-07 18:17:44
+ * @LastEditTime: 2024-07-08 20:32:00
  */
 
 const express = require("express");
@@ -24,7 +24,11 @@ const server = express();
   next();
 }); */
 
-/*  === 上面的操作 只能解析JSON格式*/
+/*  
+  === 上面的操作 只能解析JSON格式
+  POST请求
+  处理完的JSON格式会放入到request.body中
+*/
 server.use(express.json());
 
 server.post("/login", (request, response) => {
