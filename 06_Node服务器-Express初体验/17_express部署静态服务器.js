@@ -1,24 +1,27 @@
 /*
  * @Description:
  * @Author: liusuolong001
- * @Date: 2024-07-08 13:35:18
+ * @Date: 2024-07-09 16:06:59
  * @LastEditors: liusuolong001
- * @LastEditTime: 2024-07-09 05:18:46
+ * @LastEditTime: 2024-07-09 16:11:30
  */
 const express = require("express");
-const multer = require("multer");
 
 /* 
   创建一个server服务
 */
 const server = express();
 
-/*  
-  中间件express中解析get params
-  默认解析完放到request.params
+/* 
+  创建一个server服务
 */
-server.get("/search/:id/:name", (request, response) => {
-  console.log("params", request.params);
+server.use(express.static("./uploads"));
+
+/*  
+  内置中间件static
+  uploads文件名
+*/
+server.post("/login", (request, response) => {
   response.end("login success");
 });
 
